@@ -35,8 +35,8 @@ declare module 'winston-elasticsearch' {
 	export default class Elasticsearch extends TransportStream {
 			constructor(opts?: ElasticsearchTransportOptions);
 
-			query<T>(options: any, callback?: () => void): Promise<elasticsearch.SearchResponse<any>;
-			query<T>(q: string): Promise<elasticsearch.SearchResponse<any>;
+			query<T>(options: any, callback?: () => void): Promise<elasticsearch.SearchResponse<any>>;
+			query<T>(q: string): Promise<elasticsearch.SearchResponse<any>>;
 			getIndexName(opts: ElasticsearchTransportOptions): string;
 	}
 }
